@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css"/>
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/jquery.serializejson.js"></script>
 
     <script src="./js/people.js"></script>
 </head>
@@ -42,8 +43,8 @@
           </div>
 
           <div class="col-sm p-1">
-            <label for="address" class="form-label">Rua</label>
-            <input type="text" class="form-control" id="address" name="address" placeholder=""/>
+            <label for="street" class="form-label">Rua</label>
+            <input type="text" class="form-control" id="street" name="street" placeholder=""/>
           </div>
           
           <div class="col-sm p-1">
@@ -60,6 +61,18 @@
         </div>
     </div>
 
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Nome</th>
+          <th scope="col">E-mail</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody id="tableContent">
+      </tbody>
+    </table>
 
 </body>
 </html>
